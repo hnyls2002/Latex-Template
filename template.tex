@@ -1,0 +1,66 @@
+\documentclass[12pt, a4paper, oneside, scheme = plain]{article}
+\usepackage{amsmath}
+\usepackage{amsthm}
+\usepackage{amssymb}
+\usepackage{bm}
+\usepackage{graphicx}
+\usepackage{hyperref}
+\usepackage{mathrsfs}
+\usepackage{enumitem}
+\usepackage{framed}
+\usepackage{color}
+\usepackage{cite}
+\usepackage{float}
+\usepackage{caption}
+\usepackage{mathtools}
+\usepackage{tcolorbox}
+\usepackage{tikz} % TikZ graphics
+\usepackage{ctex} % Chinese support
+\usepackage[skip=7pt plus1pt, indent=0pt]{parskip} % paragraph spacing and indentation
+
+\CTEXoptions[today=old] % English date format
+
+\title{\textbf{Template : Homework 1}}
+\author{Liangsheng Yin\\(521010910090)}
+\date{\today}
+\newcounter{problemname}
+\newenvironment{problem}{\begin{tcolorbox}\stepcounter{problemname}\par\noindent\textsc{Problem \arabic{problemname}. }} {\end{tcolorbox}\vspace{0.5em}} 
+\newenvironment{solution}{\par\noindent\textsc{Solution. }}{\vspace{1em}}
+\newenvironment{note}{\par\noindent\textsc{Note of Problem \arabic{problemname}. }}{\vspace{1em}}
+
+%==================== shortcuts ====================
+% \DeclareMathOperator{\arccot}{arccot}        %  subscript and superscript on the right
+% \DeclareMathOperator*{\Max}{max}             %  subscript and superscript on the top or bottom
+
+\newcommand*{\dif}{\mathop{}\!\mathrm{d}}
+\DeclareMathOperator*\lowlim{\underline{lim}}
+\DeclareMathOperator*\uplim{\overline{lim}}
+\DeclarePairedDelimiter\ceil{\lceil}{\rceil} % \ceil*{x} for \lceil x \rceil
+\DeclarePairedDelimiter\floor{\lfloor}{\rfloor} % \floor*{x} for \lfloor x \rfloor
+\newcommand*\eval[3]{\left.#1\right\rvert_{#2}^{#3}}
+
+\begin{document}
+\maketitle
+
+\begin{problem}
+    Here is a problem.
+\end{problem}
+
+\begin{solution}
+    Here is the solution.
+    \begin{figure}[htbp]
+        \centering
+        \includegraphics[height = 6cm]{graph.jpg}
+        \caption*{A simple graph}
+        \label{graph}
+    \end{figure}
+\end{solution}
+
+\begin{note}
+    Here is a note\cite{tmp}.
+\end{note}
+
+\bibliographystyle{IEEEtran}
+\bibliography{template.bib}
+
+\end{document}
