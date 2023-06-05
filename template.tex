@@ -13,7 +13,7 @@
 \usepackage{float}
 \usepackage{caption}
 \usepackage{mathtools}
-\usepackage{tcolorbox}
+\usepackage[breakable]{tcolorbox}
 \usepackage{tikz} % TikZ graphics
 \usepackage{ctex} % Chinese support
 \usepackage[skip=7pt plus1pt, indent=0pt]{parskip} % paragraph spacing and indentation
@@ -25,7 +25,7 @@
 \author{Liangsheng Yin\\(521010910090)}
 \date{\today}
 \newcounter{problemname}
-\newenvironment{problem}{\begin{tcolorbox}\stepcounter{problemname}\noindent\textbf{Problem \arabic{problemname}.}} {\end{tcolorbox}\vspace{0.5em}} 
+\newenvironment{problem}{\begin{tcolorbox}[breakable]\stepcounter{problemname}\noindent\textbf{Problem \arabic{problemname}.}} {\end{tcolorbox}\vspace{0.5em}} 
 \newenvironment{solution}{\par\noindent\textbf{Solution. }}{\vspace{1em}}
 \newenvironment{note}{\par\noindent\textbf{Note of Problem \arabic{problemname}. }}{\vspace{1em}}
 
